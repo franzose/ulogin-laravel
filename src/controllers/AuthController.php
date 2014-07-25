@@ -91,7 +91,7 @@ class AuthController extends Controller {
      */
     protected function requestUloginData()
     {
-        $url = 'http://ulogin.ru/token.php?token=' . Input::get('tokenn') . '&host=' . Request::server('HTTP_HOST');
+        $url = 'http://ulogin.ru/token.php?token=' . Input::get('token') . '&host=' . Request::server('HTTP_HOST');
         $content = file_get_contents($url);
 
         return json_decode($content, true);
