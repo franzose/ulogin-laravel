@@ -1,0 +1,25 @@
+{
+    "name": "franzose/ulogin-laravel",
+    "description": "uLogin social auth for Laravel 4",
+    "keywords": ["uLogin", "auth", "social networks", "facebook", "vkontakte", "mailru", "laravel"],
+    "authors": [
+        {
+            "name": "Jan Iwanow",
+            "email": "iwanow.jan@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-4": {
+            "Franzose\\UloginLaravel\\Controllers\\": "src/controllers/",
+            "Franzose\\UloginLaravel\\Models\\": "src/models/",
+            "Franzose\\UloginLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
